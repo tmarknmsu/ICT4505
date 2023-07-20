@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shop - Cratis Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+
+
+<body>
+    <div id="header-placeholder"></div>
+
+<div class=" title">
+    <h1>Shop</h1>
+</div>
+
+<div class ="shopBoxes">
+        <div class="feature-box">
+            <img src="underConstructionIcon.jpg" alt="Main Item 1">
+            <h3>Name of Item 1</h3>
+            <p>Brief Description of Item 1</p>
+            <a href="shop.html"> <button class="action-button">Shop Now</button></a>
+        </div>
+        <div class="feature-box">
+            <img src="underConstructionIcon.jpg" alt="Main Item 2">
+            <h3>Name of Item 2</h3>
+            <p>Brief Description of Item 2</p>
+            <a href="shop.html"> <button class="action-button">Shop Now</button></a>
+        </div>
+        <div class="feature-box">
+            <img src="underConstructionIcon.jpg" alt="Main Item 3">
+            <h3>Name of Item 3</h3>
+            <p>Brief Description of Item 3</p>
+            <a href="shop.html"> <button class="action-button">Shop Now</button></a>
+        </div>
+    
+</div>
+
+<div class="accesories">
+    <h1>Accesories</h1>
+</div>
+
+<div class ="accesoriesBoxes">
+    <div class="feature-box">
+        <img src="underConstructionIcon.jpg" alt="Call Support">
+        <h3>Name of Accessory 1</h3>
+        <p>Brief Description of Item</p>
+        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+    </div>
+    <div class="feature-box">
+        <img src="underConstructionIcon.jpg" alt="FAQ">
+        <h3>Name of Accessory 2</h3>
+        <p>Brief Description of Item</p>
+        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+    </div>
+    <div class="feature-box">
+        <img src="underConstructionIcon.jpg" alt="Send Us an Email">
+        <h3>Name of Accessory 3</h3>
+        <p>Brief Description of Item</p>
+        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+    </div>
+    <div class="feature-box">
+        <img src="underConstructionIcon.jpg" alt="Send Us an Email">
+        <h3>Name of Accessory 4</h3>
+        <p>Brief Description of Item</p>
+        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+    </div>
+
+</div>
+
+    
+    
+    <div id="footer-placeholder"></div>
+
+
+
+<script>
+        // Load header and footer content
+        document.addEventListener("DOMContentLoaded", function() {
+            const headerPlaceholder = document.getElementById("header-placeholder");
+            const footerPlaceholder = document.getElementById("footer-placeholder");
+
+            // Load header
+            fetch("header.html")
+                .then(response => response.text())
+                .then(content => headerPlaceholder.innerHTML = content);
+
+            // Load footer
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(content => footerPlaceholder.innerHTML = content);
+        });
+    </script>
+
+
+
+
+
+</body>
+

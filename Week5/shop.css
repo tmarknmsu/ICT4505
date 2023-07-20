@@ -1,0 +1,101 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 42px; 
+    font-weight: bold; 
+  }
+
+  .title h2 {
+    font-size: 36px;
+    font-weight: normal;
+  }
+/* Feature Boxes */
+.shopBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px; /*Set a maximum width for the container, adjust as needed*/
+    margin: 0 auto; /*Center the container horizontally */
+    z-index: 2;
+    
+  }
+
+  /* Styles for each feature box */
+  .feature-box {
+    flex: 1; /* Distribute the space evenly among the feature boxes */
+    text-align: center; /* Center the content horizontally */
+    background-color: #ffffff; /* Set the background color of the box */
+    border: 2px solid #c7c6c6;
+    padding: 50px;
+    border-radius: 20px; /* Add rounded corners */
+    margin: 3%;
+    z-index: 2;
+    
+  }
+
+  /* Styles for the logo inside each box */
+  .feature-box img {
+    width: 50px; /* Set the width of the logo, adjust as needed */
+    height: 50px; /* Set the height of the logo, adjust as needed */
+    margin-bottom: 10px; /* Add some space between the logo and the text */
+    z-index: 2;
+  }
+
+  /* Styles for the text inside each box */
+  .feature-box h3 {
+    margin: 0;
+    font-size: 18px; /* Set the font size, adjust as needed */
+    font-weight: 500; /* Set the font weight, adjust as needed */
+    color: #333; /* Set the text color */
+  }
+
+/* CSS for each feature box */
+.feature-box {
+    display: flex;
+    flex-direction: column; /* Make the content flow from top to bottom */
+    align-items: center; /* Center the content horizontally */
+    justify-content: space-between; /* Push the elements away from each other vertically */
+    background-color: #ffffff; /* Set the background color of the box */
+    border: 2px solid #c7c6c6;
+    padding: 30px;
+    border-radius: 15px; /* Add rounded corners */
+    margin: 10px; /* Add some space between the feature boxes */
+  }
+  
+  /* CSS for the "Add to Cart" button */
+  .feature-box button {
+    background-color: #000; /* Button background color (black) */
+    color: #fff; /* Button text color (white) */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Button font size */
+    margin-top: auto; /* Push the button to the bottom */
+  }
+  .accesories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .accesories h2 {
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+  /* CSS for each feature box */
+  .accesoriesBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px; /*Set a maximum width for the container, adjust as needed*/
+    margin: 0 auto; /*Center the container horizontally */
+    z-index: 2;
+    
+  }

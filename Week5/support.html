@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Support - Cratis Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="support.css">
+
+</head>
+
+
+    
+<body>
+    <div id="header-placeholder"></div>
+
+<div class=" title">
+    <h1>Support</h1>
+    <h2>How can we help?</h2>
+</div>
+
+<div class ="supportBoxes">
+        <div class="feature-box">
+            <img src="wifi-hotsport-icon-transparent-free-png.webp" alt="Call Support">
+            <h3>Call Support</h3>
+            <p>Call us for instant support</p>
+        </div>
+        <div class="feature-box">
+            <img src="historyIcon.png" alt="FAQ">
+            <h3>FAQ</h3>
+            <p>Here are some common issues and troubshooting tips</p>
+        </div>
+        <div class="feature-box">
+            <img src="share-icon.png" alt="Send Us an Email">
+            <h3>Send Us an Email</h3>
+            <p>Want to let us know something? Inquire about Business or Influencer Permissions?</p>
+        </div>
+    
+</div>
+
+    
+    
+    
+    <div id="footer-placeholder"></div>
+
+
+
+<script>
+        // Load header and footer content
+        document.addEventListener("DOMContentLoaded", function() {
+            const headerPlaceholder = document.getElementById("header-placeholder");
+            const footerPlaceholder = document.getElementById("footer-placeholder");
+
+            // Load header
+            fetch("header.html")
+                .then(response => response.text())
+                .then(content => headerPlaceholder.innerHTML = content);
+
+            // Load footer
+            fetch("footer.html")
+                .then(response => response.text())
+                .then(content => footerPlaceholder.innerHTML = content);
+        });
+    </script>
+
+
+
+
+
+</body>

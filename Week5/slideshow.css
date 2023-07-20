@@ -1,0 +1,16 @@
+/* Container for the slideshow */
+.slideshow-container {
+    max-width: 99%;
+    max-height: 700px;
+    z-index: 2;
+    overflow-y: hidden;
+  }
+  
+
+  
+  /* Images inside the slideshow */
+  .slideshow-container img { height: 10%;
+    width: 100%;
+    text-align: left;
+    z-index: 2;
+  }
