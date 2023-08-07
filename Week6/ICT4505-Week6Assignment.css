@@ -1,0 +1,235 @@
+/* General */
+/* html {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  height: 100%;
+} */
+
+/* body {
+  margin: 20px 0;
+  overflow: auto;
+ 
+  color: #fff;
+} */
+
+header {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+/* the links when larger than mobile */
+    nav.nav-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+
+
+
+
+/* mobile size */
+@media screen and (max-width: 768px) {
+      .logo{
+        align-items: center;
+      }
+
+      .nav-links{
+        width: 0%;
+      }
+      .nav-links a{
+        visibility: hidden;
+      }
+
+/* Working Hamburger Nav */
+
+      .menu1 a {
+        color: #292929;
+        text-decoration: none;
+      }
+
+
+
+      .p-menu1{
+        height: 100%;
+      }
+
+
+
+
+      /* Hamburger */
+      .hamburger1 {
+        height: 45px;
+        margin: 10px;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        z-index: 120;
+      }
+
+      .hamburger1 div {
+        background-color: rgb(109, 109, 109);
+        position: relative;
+        width: 40px;
+        height: 5px;
+        margin-top: 7px;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+      }
+
+      #toggle1 {
+        display: none;
+      }
+
+      #toggle1:checked + .hamburger1 .top {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        margin-top: 22.5px;
+      }
+
+      #toggle1:checked + .hamburger1 .meat {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        margin-top: -5px;
+      }
+
+      #toggle1:checked + .hamburger1 .bottom {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+      }
+
+      #toggle1:checked ~ .menu1 {
+        height: 340px;
+      }
+
+
+      /* Menu */
+      .menu1 {
+        width: 100%;
+        background-color: #333;
+        margin: 0;
+        display: -ms-grid;
+        display: grid;
+        grid-template-rows: 1fr repeat(4, 0.5fr);
+        grid-row-gap: 25px;
+        padding: 0;
+        list-style: none;
+        clear: both;
+        width: auto;
+        text-align: center;
+        height: 0px;
+        overflow: hidden;
+        transition: height .4s ease;
+        z-index: 120;
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        color: #fff;
+      }
+
+      .menu1 a{
+        color: #fff;
+      }
+
+      .menu1 a:first-child {
+        margin-top: 40px;
+        
+      }
+
+      .menu1 a:last-child {
+        margin-bottom: 40px;
+        
+      }
+
+      .link1 {
+        width: 100%;
+        margin: 0;
+        padding: 10px 0;
+        font: 700 20px 'Oswald', sans-serif;
+      }
+
+      .link1:hover {
+        background-color: #fff;
+        color: rgb(61, 61, 61);
+        -webkit-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+
+      #opening img {
+        margin-bottom: 20px;
+        width: 100%;
+        
+      }
+  }
+
+  /* tablet size */
+  @media screen and (min-width: 769px) and (max-width: 1260px) {
+    .p-menu1{
+      visibility: hidden;
+    }
+    #opening {
+      flex-direction: row;
+    }
+    #opening img {
+      margin-bottom: 20px;
+      max-width: 400px;
+    }
+    .intro,
+    #video {
+      max-width: 100%;
+      
+    }
+  }
+
+  /* PC Size */
+  @media screen and (min-width: 1261px) {
+    .p-menu1{
+      visibility: hidden;
+    }
+
+    #opening {
+      display: flex; /* Use flexbox for the container */
+      align-items: center; /* Center the items vertically */
+    }
+
+    .beerPicImage {
+      flex: 1; /* Let the image container grow and take available space */
+      margin-right: 20px; /* Add some space between the image and the intro */
+      
+    }
+
+    #opening img {
+      margin-right: 20px;
+      max-width: 400px;
+    }
+
+    .intro {
+      flex: 1; /* Let the intro container grow and take available space */
+    }
+
+  }

@@ -1,0 +1,32 @@
+/* Add appropriate styling for your web page here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #2c2e31;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+#resizable { width: 150px; height: 150px; padding: 0.5em; }
+#resizable h3 { text-align: center; margin: 0; }
+
+#draggable { width: 150px; height: 150px; padding: 0.5em; }
