@@ -26,14 +26,14 @@ body {
         position: absolute;
         top: 20%; /* Adjust as needed to vertically center the text */
         left: 40%; /* Adjust as needed to horizontally center the text */
-        transform: translate(-50%, -50%); /* Center the text properly */
+        /* transform: translate(-50%, -50%); Center the text properly */
         z-index: 2; /* Set a higher z-index to position the text above the image */
         color: #fff; /* Set text color as needed */
         text-align: left; /* Center the text horizontally */
     }
 
     /* Styles for the button */
-    .action-button {
+    .a_button {
       background-color: #ffffff; /* Button background color */
       color: #020101; /* Button text color */
       padding: 10px 20px; /* Button padding */
@@ -47,9 +47,9 @@ body {
 
 /* Feature Boxes */
     .feature-boxes {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      /* display: flex; */
+      /* flex-wrap: wrap; */
+      /* justify-content: space-between; */
       max-width: 100%; /*Set a maximum width for the container, adjust as needed
       margin: 0 auto; /* Center the container horizontally */
       z-index: 2;
@@ -58,7 +58,7 @@ body {
 
     /* Styles for each feature box */
     .feature-box {
-      flex: 1; /* Distribute the space evenly among the feature boxes */
+      /* flex: 1; Distribute the space evenly among the feature boxes */
       
       text-align: center; /* Center the content horizontally */
       background-color: #ffffff; /* Set the background color of the box */
@@ -97,7 +97,7 @@ body {
 
     .staticPicture {
       position: absolute;
-      top: 2000;
+      top: 5%;
       left: 0; /* Set the left position to 0 to start from the left edge of the container */
       width: 100%; /* Set the width to 100% to span the total width of the container */
       z-index: -1; /* Set a lower z-index to position the picture behind other elements */
@@ -112,17 +112,22 @@ body {
 
 /* Benefit container section */
     .benefit-containers {
-      display: flex;
-      flex-wrap: wrap; /* Allow the benefit boxes to wrap to a new row */
-      justify-content: space-between;
+      /* display: flex; */
+      /* flex-wrap: wrap; Allow the benefit boxes to wrap to a new row */
+      /* justify-content: space-between; */
       max-width: 100%;  /*Set a maximum width for the container, adjust as needed */
       margin: 0 auto; /* Center the container horizontally */
       z-index: 2;
     }
 
+    .benefit-containers .benefit-box h3{
+      font-size: 140%;
+      /* font: bold; */
+    }
+
     /* Styles for each benefit box */
     .benefit-box {
-      flex-basis: calc(25% - 20px); /* Set the initial flex basis for each benefit box */
+      /* flex-basis: calc(20%); Set the initial flex basis for each benefit box */
       text-align: center; /* Center the content horizontally */
       background-color: #ffffff; /* Set the background color of the box */
       border: 2px solid #c7c6c6;
@@ -150,47 +155,47 @@ body {
 
 /* picture scroll part */
 /* Container for the slideshow */
-    .slideshow-container {
+    /* .slideshow-container {
       position: relative;
       max-width: 100%;
       margin: auto;
-    }
+    } */
 
     /* Slides container */
-    .slides {
+    /* .slides {
       display: flex;
       transition: transform 0.4s ease-in-out;
       overflow: hidden;
-    }
+    } */
 
     /* Individual slides (images) */
-    .slides img {
+    /* .slides img {
       width: 100%;
       height: auto;
-    }
+    } */
 
     /* Navigation buttons */
-    .prev, .next {
+    /* .prev, .next {
       position: absolute;
       top: 50%;
       font-size: 30px;
       font-weight: bold;
       padding: 10px;
       cursor: pointer;
-    }
+    } */
 
-    .prev {
+    /* .prev {
       left: 0;
     }
 
     .next {
       right: 0;
-    }
+    } */
 
 
 
 
-  h1 {
+  /* h1 {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
@@ -201,9 +206,9 @@ body {
     font-size: 16px;
     margin-bottom: 20px;
   }
-  
+  */
   /* Div Styles */
-  
+/*   
   #overview,
   #objectives,
   #targetAudience,
@@ -214,9 +219,9 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+   */
   /* Table Styles */
-  
+/*   
   table {
     width: 100%;
     border-collapse: collapse;
@@ -239,6 +244,6 @@ body {
   td:first-child {
     font-weight: bold;
   }
-  
+   */
 
   
