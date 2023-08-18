@@ -3,26 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <title>Home - Cratis Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="footer.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <!-- <link rel="stylesheet" href="slideshow.css"> -->
 </head>
 
 
 
 <body>
-    <div id="header-placeholder"></div>
+    <header>
+        <div class = "header">
+        <a href = "home.html">
+            <img class = "headerImage"  src="pictures/thermometerLogo.png" alt="Cratis Logo" href="home.html"></img>
+        </a>
+        <h1><a href="home.html">Cratis Meat Thermometer</a></h1>
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+        <!-- to toggle the list up and down -->
+        <div class="togglerList">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+              <h3 class="ui-widget-header ui-corner-all"></h3>
+              <!-- <nav class="nav-list"> -->
+                <!-- <ul> -->
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="support.html">Support</a></li>
+                <!-- </ul> -->
+              <!-- </nav> -->
+            
+            </div>
+          </div>
 
+        </div>
+    </header>
 
+    <div class="page">
     <div class="image-container">
-        <img src="cookPic1_edit.jpg" alt="Meat Cooking">
+        <img src="pictures/cookPic1_edit.jpg" alt="Meat Cooking">
         <div class="image-text">
             <h2>Welcome to Our Website</h2>
             <h2>Discover more about our products and services.</h2>
-            <!-- <a href="shop.html"> -->
+            <a href="shop.html">
                 <a class="a_button" href="shop.html"> Shop Now </a>
-            <!-- </a> -->
+            </a>
         </div>
     </div>
 
@@ -44,22 +82,22 @@
     
     <div class="feature-boxes">
         <div class="feature-box">
-            <img src="wifi-hotsport-icon-transparent-free-png.webp" alt="WiFi Icon">
+            <img src="pictures/wifi-hotsport-icon-transparent-free-png.webp" alt="WiFi Icon">
             <h3>Wifi Connectivity</h3>
         </div>
         <div class="feature-box">
-            <img src="historyIcon.png" alt="History Icon">
+            <img src="pictures/historyIcon.png" alt="History Icon">
             <h3>Cook History Tracking</h3>
         </div>
         <div class="feature-box">
-            <img src="share-icon.png" alt="Share Icon">
+            <img src="pictures/share-icon.png" alt="Share Icon">
             <h3>Share With Friends</h3>
         </div>
     </div>
     <div class="static_picture_window">
 
         <div class = "staticPicture">
-            <img src="cookPic4.jpg" alt="Picture of meat on grill">
+            <img src="pictures/cookPic4.jpg" alt="Picture of meat on grill">
 
 
         </div>
@@ -85,16 +123,21 @@
             <p>Mobile app will push alarm notification incase anything is out of range.</p>
         </div>
         <div class="benefit-box">
-            <h3>Mutltiple Thermometers</h3>
+            <h3>Multiple Thermometers</h3>
             <p>For some units there can be as many as 5 different thermometers connected. 
                 Allowing multiple cooks at the same time.</p>
         </div>
     </div>
 
+    </div>
 
     <div id="footer-placeholder"></div>
-
-    <script src="home.js"></script> 
+    <iframe src="footer.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
+    
+    
+    
+    <script src="scripts/home.js"></script> 
+    <!-- <script src="scripts/header.js"></script> -->
 
 
 </body>

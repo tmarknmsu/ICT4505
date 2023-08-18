@@ -3,21 +3,29 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/header.css">
 </head>
-
+<body>
 <header>
     <div class = "header">
     <a href = "home.html">
-        <img class = "headerImage"  src="thermometerLogo.png" alt="Cratis Logo" href="home.html"></img>
+        <img class = "headerImage"  src="pictures/thermometerLogo.png" alt="Cratis Logo" href="home.html"></img>
     </a>
     <h1><a href="home.html">Cratis Meat Thermometer</a></h1>
-    <nav>
+    <button class="hamburger" id="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <nav class="nav-list">
       <ul>
         <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="support.html">Support</a></li>
-
       </ul>
     </nav>
     </div>
 </header>
-
+<script src="scripts/header.js"></script>
+</body>

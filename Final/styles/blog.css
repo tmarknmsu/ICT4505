@@ -1,0 +1,84 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .title h1 {
+    font-size: 42px; 
+    font-weight: bold; 
+  }
+
+  .title h2 {
+    font-size: 36px;
+    font-weight: normal;
+  }
+
+ /* CSS for Blog Post Boxes */
+ @media (max-width: 660px) {
+  body {
+    margin-top: 250px;
+  }
+}
+
+@media (min-width: 661px) {  
+  body {
+      margin-top: 150px;
+      }
+    }
+
+.blog-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px; /* Increase the maximum width for larger screens */
+    margin: 0 auto;
+    padding: 20px; /* Add some space around the blog posts */
+  }
+  
+  .blog-post {
+    flex: 1 1 calc(33.33% - 20px);
+    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #c7c6c6;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .blog-post h2 {
+    font-size: 20px; /* Slightly reduce the font size */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px; /* Add more space between the title and description */
+  }
+  
+  .blog-post button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px; /* Adjust button padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Slightly reduce button font size */
+  }
+  
+  @media screen and (max-width: 768px) {
+    .blog-post {
+      flex-basis: calc(50% - 20px); /* Adjust to 2 columns on smaller screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .blog-post {
+      flex-basis: calc(100% - 20px); /* Adjust to 1 column on smallest screens */
+    }
+  }

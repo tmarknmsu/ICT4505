@@ -1,29 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Load header
-    const headerPlaceholder = document.getElementById("header-placeholder");
-    fetch("header.html")
-      .then(response => response.text())
-      .then(content => headerPlaceholder.innerHTML = content);
-  
-    // Load footer
-    const footerPlaceholder = document.getElementById("footer-placeholder");
-    fetch("footer.html")
-      .then(response => response.text())
-      .then(content => footerPlaceholder.innerHTML = content);
 
-    // // Load slideshow
-    // const slideshowPlaceholder = document.getElementById("slideshow-placeholder");
-    // fetch("slideshow.html")
-    //   .then(response => response.text())
-    //   .then(content => footerPlaceholder.innerHTML = content);
-  
+    
+    
+    
+      // Toggle the list down
+   
+    $( function() {
+      // run the currently selected effect
+      function runEffect() {
+        // get effect type from
+      //   var selectedEffect = $( "#effectTypes" ).val();
+   
+        // Most effect types need no options passed by default
+        var options = {};
+        // some effects have required parameters
+        if ( "blind" === "scale" ) {
+          options = { percent: 50 };
+        } else if ( "blind" === "size" ) {
+          options = { to: { width: 200, height: 60 } };
+        }
+   
+        // Run the effect
+        $( "#effect" ).toggle( "blind", options, 500 );
+
+      };
+   
+      // Set effect from select menu value
+      $( "#hamburger" ).on( "click", function() {
+        runEffect();
+      });
+    } );
+
+
     // Parallax effect for the static picture
     window.addEventListener('scroll', function () {
       const parallax = document.querySelector('.staticPicture');
       let scrollPosition = window.scrollY;
-      parallax.style.transform = 'translateY(' + scrollPosition * -0.4 + 'px)';
+      parallax.style.transform = 'translateY(' + scrollPosition * -0.1 + 'px)';
     });
-  
+
+
+    
     
   });
   

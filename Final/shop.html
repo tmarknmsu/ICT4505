@@ -2,16 +2,53 @@
 <html>
 <head>
   <title>Shop - Cratis Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="shop.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/shop.css">
 </head>
 
 
 
 <body>
-    <div id="header-placeholder"></div>
+    <div id="overlay" class="overlay"></div>
+    <div class = "header">
+        <a href = "home.html">
+            <img class = "headerImage"  src="pictures/thermometerLogo.png" alt="Cratis Logo" href="home.html"></img>
+        </a>
+        <h1><a href="home.html">Cratis Meat Thermometer</a></h1>
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+        <!-- to toggle the list up and down -->
+        <div class="togglerList">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+              <h3 class="ui-widget-header ui-corner-all"></h3>
+              <!-- <nav class="nav-list"> -->
+                <!-- <ul> -->
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="support.html">Support</a></li>
+                <!-- </ul> -->
+              <!-- </nav> -->
+            
+            </div>
+          </div>
+
+        </div>
 
 <div class=" title">
     <h1>Shop</h1>
@@ -19,82 +56,165 @@
 
 <div class ="shopBoxes">
         <div class="feature-box">
-            <img src="underConstructionIcon.jpg" alt="Main Item 1">
-            <h3>Name of Item 1</h3>
-            <p>Brief Description of Item 1</p>
-            <a href="shop.html"> <button class="action-button">Shop Now</button></a>
+            <img src="pictures/underConstructionIcon.jpg" alt="Main Item 1">
+            <h3>Entry Meat Thermometer</h3>
+            <p></p>
+            <a> <button id="button_item1">Shop Now</button></a>
         </div>
         <div class="feature-box">
-            <img src="underConstructionIcon.jpg" alt="Main Item 2">
-            <h3>Name of Item 2</h3>
-            <p>Brief Description of Item 2</p>
-            <a href="shop.html"> <button class="action-button">Shop Now</button></a>
+            <img src="pictures/underConstructionIcon.jpg" alt="Meat Pro Thermometer">
+            <h3>Meat Pro Thermometer</h3>
+            <a> <button id="button_item2">Shop Now</button></a>
         </div>
         <div class="feature-box">
-            <img src="underConstructionIcon.jpg" alt="Main Item 3">
-            <h3>Name of Item 3</h3>
-            <p>Brief Description of Item 3</p>
-            <a href="shop.html"> <button class="action-button">Shop Now</button></a>
+            <img src="pictures/underConstructionIcon.jpg" alt="Ultimate Grilling Kit">
+            <h3>Ultimate Grilling Kit</h3>
+            <a> <button id="button_item3">Shop Now</button></a>
         </div>
     
 </div>
+<div id = "item1">
+    <span id="closeModalBtn" class="close">&times;</span>
+    <div class="feature-box">
+        <img src="pictures/underConstructionIcon.jpg" alt="Entry Meat Thermometer">
+        <h3>Entry Meat Thermometer</h3>
+        <p>Cratis Entry Meat Thermometer—a compact companion designed to simplify your cooking experience. 
+            Crafted for both beginners and seasoned grillmasters, this versatile thermometer ensures your 
+            culinary creations are cooked to perfection, every time.<br><br>
+            With the Cratis Entry Meat Thermometer, precision cooking is at your fingertips. Easily monitor 
+            the internal temperature of your meat as it cooks, thanks to the clear and intuitive display. 
+            Whether you're grilling a succulent steak or slow-roasting a tender roast, our thermometer provides
+            real-time readings, guiding you to achieve the ideal level of doneness.<br><br>
+            Compact yet powerful, the Entry Meat Thermometer features a sleek design that fits comfortably in your 
+            hand. Its straightforward controls make it effortless to set your desired temperature or select from 
+            pre-programmed settings. Say goodbye to guesswork and hello to consistent, mouthwatering results.</p>
+        <a> <button>Add To Cart</button></a>
+    </div>
+</div>
+    <div id = "item2">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <div class="feature-box">
+            <img src="pictures/underConstructionIcon.jpg" alt="Meat Pro Thermometer">
+            <h3>Meat Pro Thermometer</h3>
+            <p>Introducing the Cratis Meat Pro—a must-have tool for serious barbecue enthusiasts and professional chefs alike. 
+                Elevate your culinary expertise to a whole new level with our advanced Meat Pro thermometer. Designed with precision 
+                and innovation in mind, the Meat Pro thermometer offers unparalleled accuracy and a host of features that allow you 
+                to achieve mastery over every meat you grill or smoke.<br><br>
 
+                With the Cratis Meat Pro, no detail is too small. Monitor multiple temperature zones simultaneously and receive 
+                real-time updates on your smartphone via the Cratis app, ensuring you never miss a critical moment in your cooking 
+                process. Whether you're perfecting the art of low and slow smoking or seeking the perfect sear on your steaks, the 
+                Meat Pro thermometer empowers you to take control and achieve consistent, mouthwatering results.<br><br>
+                
+                Crafted from durable materials, the Meat Pro thermometer is built to withstand the rigors of the grilling world, 
+                making it an indispensable companion for every cookout and barbecue event. Unlock a new dimension of cooking precision 
+                and flavor with the Cratis Meat Pro—the ultimate choice for those who demand nothing less than perfection from their grill.</p>
+            <a> <button>Add To Cart</button></a>
+        </div>
+    </div>
+        <div id = "item3">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <div class="feature-box">
+                <img src="pictures/underConstructionIcon.jpg" alt="Ultimate Grilling Kit">
+                <h3>Ultimate Grilling Kit</h3>
+                <p>Introducing the Cratis Ultimate Grilling Kit—a meticulously curated collection that brings 
+                    together the best of both worlds: the convenience of our Entry Meat Thermometer and the 
+                    advanced capabilities of our Meat Pro thermometer. Elevate your grilling experience with a 
+                    comprehensive set that covers all your cooking needs, whether you're a novice griller or a 
+                    seasoned pitmaster.<br><br>
+
+                    The Ultimate Grilling Kit includes the Entry Meat Thermometer for straightforward temperature 
+                    readings and real-time updates, ensuring your dishes are cooked to perfection. But that's just
+                     the beginning. Seamlessly switch to the advanced Meat Pro thermometer for multi-zone monitoring 
+                     and app integration. With the Cratis app, you can keep an eye on temperatures from your smartphone,
+                      receiving notifications and adjusting settings with ease.<br><br>
+                    
+                    Crafted with attention to detail, the Ultimate Grilling Kit is your ticket to becoming the 
+                    grillmaster you've always aspired to be. Whether you're hosting a backyard barbecue, a tailgate
+                     party, or a friendly cook-off, this kit equips you with the tools you need to impress your 
+                     guests and savor the flavors of perfectly cooked meat. Elevate your grilling game with the 
+                     Cratis Ultimate Grilling Kit—the all-in-one solution for achieving grilling greatness.</p>
+                <a> <button>Add To Cart</button></a>
+            </div>
+        </div>
+        <div id = "item4">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <div class="feature-box">
+                <img src="pictures/underConstructionIcon.jpg" alt="GrillMaster Gloves">
+                <h3>GrillMaster Gloves</h3>
+                <p>Keep your hands protected while handling hot grates, pans, and utensils with our 
+                    heat-resistant GrillMaster Gloves. Crafted from durable materials, these gloves provide
+                    a secure grip and allow you to handle your grill with confidence.</p>
+                <a> <button>Add To Cart</button></a>
+            </div>
+        </div>
+        <div id = "item5">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <div class="feature-box">
+                <img src="pictures/underConstructionIcon.jpg" alt="GrillBrush Pro">
+                <h3>GrillBrush Pro</h3>
+                <p>Maintain your grill's pristine condition with the GrillBrush Pro. Its sturdy bristles effortlessly remove grease,
+                     residue, and charred debris from grates, ensuring your grill is always ready for the next cooking adventure.
+                <a> <button>Add To Cart</button></a>
+            </div>
+        </div>
+        <div id = "item6">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <div class="feature-box">
+                <img src="pictures/underConstructionIcon.jpg" alt="SmokeBox Wood Chips Sampler">
+                <h3>SmokeBox Wood Chips Sampler</h3>
+                <p>Elevate your flavors with our SmokeBox Wood Chips Sampler. Experiment with a variety of wood chips to infuse your 
+                    grilled meats with smoky, aromatic notes. From hickory to applewood, create a symphony of flavors that cater to 
+                    your taste preferences.</p>
+                <a> <button>Add To Cart</button></a>
+            </div>
+        </div>
+        <div id = "item7">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <div class="feature-box">
+                <img src="pictures/underConstructionIcon.jpg" alt="GrillChef Apron">
+                <h3>GrillChef Apron</h3>
+                <p>Gear up for your grilling sessions with the GrillChef Apron. Designed with multiple pockets to hold tools, sauces, 
+                    and essentials, this apron adds style and functionality to your cooking endeavors. Stay organized and look the part 
+                    while commanding the grill.</p>
+                <a> <button>Add To Cart</button></a>
+            </div>
+        </div>
+</div>
 <div class="accesories">
     <h1>Accesories</h1>
 </div>
 
 <div class ="accesoriesBoxes">
+    <h3>These accessories, along with your wireless meat thermometers, complete the ultimate grilling toolkit, ensuring you have 
+        everything you need to become a true grillmaster and elevate your outdoor cooking experience.</h3>
     <div class="feature-box">
-        <img src="underConstructionIcon.jpg" alt="Call Support">
-        <h3>Name of Accessory 1</h3>
-        <p>Brief Description of Item</p>
-        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+        <img src="pictures/underConstructionIcon.jpg" alt="Call Support">
+        <h3>GrillMaster Gloves</h3>
+        <a> <button id="button_item4">Shop Now</button></a>
     </div>
     <div class="feature-box">
-        <img src="underConstructionIcon.jpg" alt="FAQ">
-        <h3>Name of Accessory 2</h3>
-        <p>Brief Description of Item</p>
-        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+        <img src="pictures/underConstructionIcon.jpg" alt="GrillBrush Pro">
+        <h3>GrillBrush Pro</h3>
+        <a> <button id="button_item5">Shop Now</button></a>
     </div>
     <div class="feature-box">
-        <img src="underConstructionIcon.jpg" alt="Send Us an Email">
-        <h3>Name of Accessory 3</h3>
-        <p>Brief Description of Item</p>
-        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+        <img src="pictures/underConstructionIcon.jpg" alt="SmokeBox Wood Chips Sampler">
+        <h3>SmokeBox Wood Chips Sampler</h3>
+        <a> <button id="button_item6">Shop Now</button></a>
     </div>
     <div class="feature-box">
-        <img src="underConstructionIcon.jpg" alt="Send Us an Email">
-        <h3>Name of Accessory 4</h3>
-        <p>Brief Description of Item</p>
-        <a href="shop.html"> <button class="action-button">Add To Cart</button></a>
+        <img src="pictures/underConstructionIcon.jpg" alt="GrillChef Apron">
+        <h3>GrillChef Apron</h3>
+        <a> <button id="button_item7">Shop Now</button></a>
     </div>
 
 </div>
-
+<iframe src="footer.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>    
     
-    
-    <div id="footer-placeholder"></div>
-
-
-
-<script>
-        // Load header and footer content
-        document.addEventListener("DOMContentLoaded", function() {
-            const headerPlaceholder = document.getElementById("header-placeholder");
-            const footerPlaceholder = document.getElementById("footer-placeholder");
-
-            // Load header
-            fetch("header.html")
-                .then(response => response.text())
-                .then(content => headerPlaceholder.innerHTML = content);
-
-            // Load footer
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(content => footerPlaceholder.innerHTML = content);
-        });
-    </script>
-
+<div class="staticPicture"></div>
+<script src="scripts/home.js"></script>
+<script src="scripts/shop.js"></script>
 
 
 

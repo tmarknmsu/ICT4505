@@ -2,17 +2,53 @@
 <html>
 <head>
   <title>Support - Cratis Website</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="header.css">
-  <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="support.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/support.css">
 
 </head>
 
 
     
 <body>
-    <div id="header-placeholder"></div>
+    <div class = "header">
+        <a href = "home.html">
+            <img class = "headerImage"  src="pictures/thermometerLogo.png" alt="Cratis Logo" href="home.html"></img>
+        </a>
+        <h1><a href="home.html">Cratis Meat Thermometer</a></h1>
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="nav-list">
+          <ul>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </nav>
+        <!-- to toggle the list up and down -->
+        <div class="togglerList">
+            <div id="effect" class="ui-widget-content ui-corner-all">
+              <h3 class="ui-widget-header ui-corner-all"></h3>
+              <!-- <nav class="nav-list"> -->
+                <!-- <ul> -->
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="support.html">Support</a></li>
+                <!-- </ul> -->
+              <!-- </nav> -->
+            
+            </div>
+          </div>
+
+        </div>
 
 <div class=" title">
     <h1>Support</h1>
@@ -21,50 +57,27 @@
 
 <div class ="supportBoxes">
         <div class="feature-box">
-            <img src="wifi-hotsport-icon-transparent-free-png.webp" alt="Call Support">
+            <img src="pictures/wifi-hotsport-icon-transparent-free-png.webp" alt="Call Support">
             <h3>Call Support</h3>
             <p>Call us for instant support</p>
         </div>
         <div class="feature-box">
-            <img src="historyIcon.png" alt="FAQ">
+            <img src="pictures/historyIcon.png" alt="FAQ">
             <h3>FAQ</h3>
             <p>Here are some common issues and troubshooting tips</p>
         </div>
         <div class="feature-box">
-            <img src="share-icon.png" alt="Send Us an Email">
+            <img src="pictures/share-icon.png" alt="Send Us an Email">
             <h3>Send Us an Email</h3>
             <p>Want to let us know something? Inquire about Business or Influencer Permissions?</p>
         </div>
     
 </div>
-
+<div class="staticPicture"></div>
     
+<iframe src="footer.html" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>    
     
-    
-    <div id="footer-placeholder"></div>
 
-
-
-<script>
-        // Load header and footer content
-        document.addEventListener("DOMContentLoaded", function() {
-            const headerPlaceholder = document.getElementById("header-placeholder");
-            const footerPlaceholder = document.getElementById("footer-placeholder");
-
-            // Load header
-            fetch("header.html")
-                .then(response => response.text())
-                .then(content => headerPlaceholder.innerHTML = content);
-
-            // Load footer
-            fetch("footer.html")
-                .then(response => response.text())
-                .then(content => footerPlaceholder.innerHTML = content);
-        });
-    </script>
-
-
-
-
+<script src="scripts/home.js"></script>
 
 </body>

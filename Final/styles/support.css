@@ -13,6 +13,21 @@
     font-size: 36px;
     font-weight: normal;
   }
+  
+/* CSS for Blog Post Boxes */
+@media (max-width: 660px) {
+  body {
+    margin-top: 250px;
+  }
+}
+
+@media (min-width: 661px) {  
+  body {
+      margin-top: 150px;
+      }
+    }
+
+
 /* Feature Boxes */
 .supportBoxes{
     display: flex;
